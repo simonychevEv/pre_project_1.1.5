@@ -44,7 +44,6 @@ public class Util {
                 .build();
         MetadataSources metadataSources = new MetadataSources(serviceRegistry)
                 .addAnnotatedClass(User.class);
-        System.out.println("Connection OK");
         return metadataSources.buildMetadata().buildSessionFactory();
     }
 }
